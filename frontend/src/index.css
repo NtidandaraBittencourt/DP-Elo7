@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer utilities {
+	.grid-rows-layout {
+		grid-template-rows: 25vh 15vh 15vh 35vh 10vh;
+	}
+} */
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('/src/assets/museosans-500/MuseoSans_500.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* .box1 {
+	@apply h-[692px] md:h-[532px] gap-8 sm:gap-3;
+
+	.image {
+		@apply w-full;
+	}
+
+	.texto, .typography, .link-box {
+		@apply text-center font-normal text-base sm:text-2xl;
+	}
+
+	.texto {
+		@apply text-custonGrayText;
+	}
+	
+	.typography {
+		@apply p-6;
+	}
+	
+	.divider {
+		@apply border-t border-gray-300 pt-2;
+	}
+	
+	.link-box {
+		@apply text-blue-500 hover:text-blue-700 flex justify-center place-items-center pt-8;
+	}
+} */
+
+.box {
+  @apply h-[692px] md:h-[532px] gap-8 sm:gap-3 flex flex-col md:flex-row grid;
+
+  .image {
+    @apply w-full;
+  }
+
+  .texto, .typography, .link-box {
+    @apply text-center font-normal text-base sm:text-2xl;
+  }
+
+  .texto {
+    @apply text-custonGrayText px-12;
+  }
+
+  .typography {
+    @apply py-6;
+  }
+
+  .divider {
+    @apply border-t border-gray-300 pt-2;
+  }
+
+  .link-box {
+    @apply text-blue-500 hover:text-blue-700 flex justify-center items-center pt-8 text-nowrap;
+  }
+
+  .coluna1 {
+    @apply w-full;
+  }
+
+  .coluna2 {
+    @apply w-full md:flex-row md:justify-center flex flex-col gap-8 bg-customGray;
+  }
+
+	.coluna3 {
+		@apply w-full md:flex-row md:justify-center flex flex-col gap-8;
+		
+	}
+}
