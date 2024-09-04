@@ -11,7 +11,7 @@ export default {
         customAmber: '#FFF3DB',
         custonGrayText: '#333333',
         custonYellow: '#D99F2C',
-        custonTextBody: '#57575C'
+        custonTextColorBody: '#57575C'
       },
       fontFamily: {
         'museo': ['Museo Sans', 'sans-serif'],
